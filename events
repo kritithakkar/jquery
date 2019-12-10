@@ -1,0 +1,153 @@
+MOUSE EVENTS
+1)click
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+<p>hello</p>
+<p>world</p>
+</body>
+</html>
+
+2)dblclick
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+<p>hello</p>
+<p>world</p>
+</body>
+</html>
+ 
+ 3)mouseenter
+ <!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#he").mouseenter(function(){
+			alert("hello world");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="he">bring your mouse </p>
+</body>
+</html>
+
+4)mouseleave
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#he").mouseleave(function(){
+			alert("bye bye");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="he">bring your mouse </p>
+</body>
+</html>
+
+5)mousedown
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#he").mousedown(function(){
+			alert("bye bye");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="he">bring your mouse </p>
+</body>
+</html>
+
+6)mouseup
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#he").mouseup(function(){
+			alert("bye bye");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="he">bring your mouse </p>
+</body>
+</html>
+
+7)hover(mouseenter and mouseleave)
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#he").hover(function(){
+			alert("welcome")
+		},
+			function(){
+				alert("bye bye");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="he">bring your mouse </p>
+</body>
+</html>
+
+FORM EVENTS
+1)blur
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("input").blur(function(){
+			$(this).css("background-color","green");
+		});
+	});
+</script>
+</head>
+<body>
+	name<input type="text"><br>
+	email<input type="email">
+</body>
+</html>
+
+2)
